@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Homepage -->
+  <url><loc>https://sedativ.dev/</loc></url>
+
+  <!-- About Section -->
+  <url><loc>https://sedativ.dev/docs/about/full-code</loc></url>
+  <url><loc>https://sedativ.dev/docs/about/get-started</loc></url>
+
+  <!-- Back-End Section -->
+  <url><loc>https://sedativ.dev/docs/back-end</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/server-side</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/initialization</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/route</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/request</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/runtime</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/resource</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/response</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/reload</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/endpoints</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/cache</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/middleware</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/db-integration</loc></url>
+  <url><loc>https://sedativ.dev/docs/back-end/deployment</loc></url>
+
+  <!-- Front-End Section -->
+  <url><loc>https://sedativ.dev/docs/front-end</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/client-side</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/reifier</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/rendering</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/reactivity</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/referencing</loc></url>
+  <url><loc>https://sedativ.dev/docs/front-end/router</loc></url>
+
+  <!-- Guide Section -->
+  <url><loc>https://sedativ.dev/docs/guide</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/tutorial</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/shared-data</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/sign-up</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/sign-off</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/sign-in</loc></url>
+  <url><loc>https://sedativ.dev/docs/guide/sign-out</loc></url>
+
+</urlset>

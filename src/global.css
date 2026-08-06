@@ -1,0 +1,218 @@
+/* @view-transition { navigation: auto; } */
+
+@font-face {
+  font-family: 'Manrope';
+  src: url('/fonts/Manrope.ttf') format('ttf');
+  font-weight: 200 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* variables */
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-background: #000000;
+    --color-foreground: #F0F0F0;
+    --color-black: #0F0F0F;
+    --color-white: #F0F9FF;
+    --color-gray: #AAAAAA;
+    --color-blue: #00FFFF;
+    --color-red: #FF0000;
+    --color-yellow: #FFFF00;
+    --color-purple: #FF00FF;
+    --color-edge: #ffffff33;
+  }
+  button, input, textarea, select, option {
+    color-scheme: dark;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color-background: #F0F9FF;
+    --color-foreground: #0F0F0F;
+    --color-black: #000000;
+    --color-white: #F0F0F0;
+    --color-gray: #666666;
+    --color-blue: #00BFFF;
+    --color-red: #FF4000;
+    --color-yellow: #FFBF00;
+    --color-purple: #BF00FF;
+    --color-edge: #00000033;
+  }
+  button, input, textarea, select, option {
+    color-scheme: light;
+  }
+}
+
+:root {
+  --font-size: 1rem;
+  --font-size-ratio: 1.5;
+  --size-6: var(--font-size);
+  --size-5: calc(var(--size-6) * var(--font-size-ratio));
+  --size-4: calc(var(--size-5) * var(--font-size-ratio));
+  --size-3: calc(var(--size-4) * var(--font-size-ratio));
+  --size-2: calc(var(--size-3) * var(--font-size-ratio));
+  --size-1: calc(var(--size-2) * var(--font-size-ratio));
+  
+  --line-height: 1.5;
+  --line-height-ratio: 0.9;
+  --line-height-6: var(--line-height);
+  --line-height-5: calc(var(--line-height-6) * var(--line-height-ratio));
+  --line-height-4: calc(var(--line-height-5) * var(--line-height-ratio));
+  --line-height-3: calc(var(--line-height-4) * var(--line-height-ratio));
+  --line-height-2: calc(var(--line-height-3) * var(--line-height-ratio));
+  --line-height-1: calc(var(--line-height-2) * var(--line-height-ratio));
+
+  --font-light: 400;
+  --font-medium: 600;
+  --font-bold: 800;
+
+  --font-family-text: Manrope, sans-serif;
+  --font-family-headings: Manrope, sans-serif;
+  --border-radius: var(--font-size);
+}
+
+/* pseudo */
+::selection {
+  color: var(--color-background);
+  background: var(--color-foreground);
+}
+::placeholder {
+  color: var(--color-gray);
+  opacity: 0.5;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-background);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-foreground);
+  border-radius: 10px;
+}
+
+/* normalization */
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-sizing: border-box;
+  overscroll-behavior: none;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+html {
+  font: 300 62.5%/1 sans-serif;
+}
+body {
+  font: var(--font-light) var(--size-5)/var(--line-height-5) var(--font-family-text, sans-serif);
+  color: var(--color-foreground);
+  background: var(--color-background);
+  overflow-x: hidden;
+}
+img, picture {
+  object-fit: contain;
+}
+source {
+  display: none;
+}
+li {
+  color: var(--color-gray);
+  margin: calc(var(--size-6)) 0;
+  margin-left: var(--size-5);
+}
+table {
+  border-collapse: collapse;
+}
+hr {
+  margin: var(--size-2) 0;
+  height: 1px;
+  background: rgba(255,255,255,0.2);
+}
+a {
+  text-decoration: none;
+}
+a, button {
+  cursor: pointer;
+  color: var(--color-gray);
+}
+textarea {
+  white-space: revert;
+}
+button, input, textarea, select, option {
+  color: var(--color-foreground);
+  background: var(--color-background);
+  padding: 1rem;
+  margin: .1rem;
+  border: 1px solid #66666666;
+  border-radius: .1rem;
+  transition: all 0.2s ease-in-out;
+  font: var(--font-light) var(--size-5)/var(--line-height-5) var(--font-family-text);
+}
+
+input[type=color] {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1 { font: var(--font-light) var(--size-1)/var(--line-height-1) var(--font-family-headings); margin: var(--size-1) 0; } 
+h2 { font: var(--font-light) var(--size-2)/var(--line-height-2) var(--font-family-headings); margin: var(--size-2) 0; }
+h3 { font: var(--font-light) var(--size-3)/var(--line-height-3) var(--font-family-headings); margin: var(--size-3) 0; }
+h4 { font: var(--font-light) var(--size-4)/var(--line-height-4) var(--font-family-headings); margin: var(--size-4) 0; }
+h5 { font: var(--font-light) var(--size-5)/var(--line-height-5) var(--font-family-headings); margin: var(--size-5) 0; }
+h6 { font: var(--font-light) var(--size-6)/var(--line-height-6) var(--font-family-headings); margin: var(--size-6) 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-medium);
+  margin-top: var(--size-1);
+}
+p {
+  color: var(--color-gray);
+  line-height: 1.5;
+  margin: calc(var(--size-5)) 0;
+}
+text {
+  font-family: inherit;
+}
+strong {
+  font-weight: var(--font-bold);
+}
+
+pre {
+  background-color: transparent !important;
+}
+code {
+  color: var(--color-foreground);
+}
+
+th, td {
+  padding: var(--size-5);
+  text-align: left;
+}
+
+/* utility */
+
+.mask {
+  overflow: hidden;
+  height: auto;
+}
+@keyframes fade-out {
+  from { opacity: 1 }
+  to { opacity: 0 }
+}
+@keyframes fade-in {
+  from { opacity: 0 }
+  to { opacity: 1 }
+}

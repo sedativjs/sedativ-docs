@@ -1,0 +1,565 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="mermaid-svg" fill="#ccc" aria-roledescription="flowchart-v2" class="flowchart" font-family="&quot;trebuchet ms&quot;,verdana,arial,sans-serif" font-size="16" style="max-width:1001.7421875px" viewBox="0 0 1002 1206">
+  <style xmlns="http://www.w3.org/1999/xhtml">
+    @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css);@keyframes edge-animation-frame{0%{stroke-dashoffset:0}}@keyframes dash{to{stroke-dashoffset:0}}#mermaid-svg .edge-thickness-normal{stroke-width:1px}#mermaid-svg .edge-pattern-solid{stroke-dasharray:0}#mermaid-svg .marker{fill:#d3d3d3;stroke:#d3d3d3}#mermaid-svg .marker.cross{stroke:#d3d3d3}#mermaid-svg .label,#mermaid-svg svg{font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif}#mermaid-svg svg{font-size:16px}#mermaid-svg p{margin:0}#mermaid-svg .label{color:#ccc}#mermaid-svg span{fill:#ccc;color:#ccc}#mermaid-svg .node circle,#mermaid-svg .node path,#mermaid-svg .node rect{fill:#1f2020;stroke:#ccc;stroke-width:1px}#mermaid-svg .flowchart-link{stroke:#d3d3d3;fill:none}#mermaid-svg .edgeLabel,#mermaid-svg .node .label{text-align:center}#mermaid-svg .edgeLabel,#mermaid-svg .edgeLabel p{background-color:#585858}#mermaid-svg .edgeLabel rect{opacity:.5;background-color:#585858;fill:#585858}#mermaid-svg .labelBkg{background-color:rgba(88,88,88,.5)}#mermaid-svg [data-look=neo].node circle,#mermaid-svg [data-look=neo].node rect{stroke:url(#mermaid-svg-gradient);filter:drop-shadow(1px 2px 2px #b9b9b9)}#mermaid-svg [data-look=neo].node path{stroke:url(#mermaid-svg-gradient);stroke-width:1px}#mermaid-svg :root{--mermaid-font-family:&quot;trebuchet ms&quot;,verdana,arial,sans-serif}
+  </style>
+  <marker id="mermaid-svg_flowchart-v2-pointEnd" class="marker flowchart-v2" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="5" refY="5" viewBox="0 0 10 10">
+    <path stroke-dasharray="1 0" d="m0 0 10 5-10 5z" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-pointStart" class="marker flowchart-v2" markerHeight="8" markerUnits="userSpaceOnUse" markerWidth="8" orient="auto" refX="4.5" refY="5" viewBox="0 0 10 10">
+    <path stroke-dasharray="1 0" d="m0 5 10 5V0z" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-pointEnd-margin" class="marker flowchart-v2" markerHeight="14" markerUnits="userSpaceOnUse" markerWidth="10.5" orient="auto" refX="11.5" refY="7" viewBox="0 0 12 14">
+    <path stroke-dasharray="1 0" stroke-width="0" d="m0 0 12 7-12 7z" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-pointStart-margin" class="marker flowchart-v2" markerHeight="14" markerUnits="userSpaceOnUse" markerWidth="11.5" orient="auto" refX="1" refY="7" viewBox="0 0 12 14">
+    <path stroke-dasharray="1 0" stroke-width="0" d="m0 7 12 7V0z" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-circleEnd" class="marker flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="11" refY="5" viewBox="0 0 10 10">
+    <circle cx="5" cy="5" r="5" stroke-dasharray="1 0" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-circleStart" class="marker flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="-1" refY="5" viewBox="0 0 10 10">
+    <circle cx="5" cy="5" r="5" stroke-dasharray="1 0" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-circleEnd-margin" class="marker flowchart-v2" markerHeight="14" markerUnits="userSpaceOnUse" markerWidth="14" orient="auto" refX="12.3" refY="5" viewBox="0 0 10 10">
+    <circle cx="5" cy="5" r="5" stroke-dasharray="1 0" stroke-width="0" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-circleStart-margin" class="marker flowchart-v2" markerHeight="14" markerUnits="userSpaceOnUse" markerWidth="14" orient="auto" refX="-2" refY="5" viewBox="0 0 10 10">
+    <circle cx="5" cy="5" r="5" stroke-dasharray="1 0" stroke-width="0" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-crossEnd" class="marker cross flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="12" refY="5.2" viewBox="0 0 11 11">
+    <use xlink:href="#reuse-0" stroke-dasharray="1 0" stroke-width="2" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-crossStart" class="marker cross flowchart-v2" markerHeight="11" markerUnits="userSpaceOnUse" markerWidth="11" orient="auto" refX="-1" refY="5.2" viewBox="0 0 11 11">
+    <use xlink:href="#reuse-0" stroke-dasharray="1 0" stroke-width="2" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-crossEnd-margin" class="marker cross flowchart-v2" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" refX="17.7" refY="7.5" viewBox="0 0 15 15">
+    <use xlink:href="#reuse-1" stroke-width="2.5" class="arrowMarkerPath"/>
+  </marker>
+  <marker id="mermaid-svg_flowchart-v2-crossStart-margin" class="marker cross flowchart-v2" markerHeight="12" markerUnits="userSpaceOnUse" markerWidth="12" orient="auto" refX="-3.5" refY="7.5" viewBox="0 0 15 15">
+    <use xlink:href="#reuse-1" stroke-dasharray="1 0" stroke-width="2.5" class="arrowMarkerPath"/>
+  </marker>
+  <g class="root">
+    <g class="edgePaths">
+      <path id="mermaid-svg-L_A_B_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M518 62v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_A_B_0" data-look="classic" data-points="W3sieCI6NTE4LjEwOTM3NSwieSI6NjJ9LHsieCI6NTE4LjEwOTM3NSwieSI6ODd9LHsieCI6NTE4LjEwOTM3NSwieSI6MTEyfV0="/>
+      <path id="mermaid-svg-L_B_C_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m610 165 23 6c23 6 68 19 91 31s23 23 23 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_B_C_0" data-look="classic" data-points="W3sieCI6NjA5LjkyOTY4NzUsInkiOjE2NC42NDk3NTg3NDIzOTE0NH0seyJ4Ijo3NDcuMjE0ODQzNzUsInkiOjIwM30seyJ4Ijo3NDcuMjE0ODQzNzUsInkiOjI0MH1d"/>
+      <path id="mermaid-svg-L_C_L_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M747 294v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_C_L_0" data-look="classic" data-points="W3sieCI6NzQ3LjIxNDg0Mzc1LCJ5IjoyOTR9LHsieCI6NzQ3LjIxNDg0Mzc1LCJ5IjozMTl9LHsieCI6NzQ3LjIxNDg0Mzc1LCJ5IjozNDR9XQ=="/>
+      <path id="mermaid-svg-L_L_M_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m818 398 17 6c16 6 48 19 64 36 17 16 17 38 17 57v539" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_L_M_0" data-look="classic" data-points="W3sieCI6ODE4LjMwMjQyOTE5OTIxODgsInkiOjM5OH0seyJ4Ijo5MTUuNzE4NzUsInkiOjQzNX0seyJ4Ijo5MTUuNzE4NzUsInkiOjQ5OX0seyJ4Ijo5MTUuNzE4NzUsInkiOjU1MX0seyJ4Ijo5MTUuNzE4NzUsInkiOjYwM30seyJ4Ijo5MTUuNzE4NzUsInkiOjY2N30seyJ4Ijo5MTUuNzE4NzUsInkiOjczMX0seyJ4Ijo5MTUuNzE4NzUsInkiOjc5NX0seyJ4Ijo5MTUuNzE4NzUsInkiOjg1OX0seyJ4Ijo5MTUuNzE4NzUsInkiOjkxMX0seyJ4Ijo5MTUuNzE4NzUsInkiOjk2M30seyJ4Ijo5MTUuNzE4NzUsInkiOjEwMTV9LHsieCI6OTE1LjcxODc1LCJ5IjoxMDQwfV0="/>
+      <path id="mermaid-svg-L_L_N_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m704 398-10 6c-10 6-30 19-40 30-10 12-10 23-10 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_L_N_0" data-look="classic" data-points="W3sieCI6NzAzLjg0NDExNjIxMDkzNzUsInkiOjM5OH0seyJ4Ijo2NDQuNDEwMTU2MjUsInkiOjQzNX0seyJ4Ijo2NDQuNDEwMTU2MjUsInkiOjQ3Mn1d"/>
+      <path id="mermaid-svg-L_N_O_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M644 526v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_N_O_0" data-look="classic" data-points="W3sieCI6NjQ0LjQxMDE1NjI1LCJ5Ijo1MjZ9LHsieCI6NjQ0LjQxMDE1NjI1LCJ5Ijo1NTF9LHsieCI6NjQ0LjQxMDE1NjI1LCJ5Ijo1NzZ9XQ=="/>
+      <path id="mermaid-svg-L_O_P_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m608 630-8 6c-9 6-25 19-33 30-9 12-9 23-9 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_O_P_0" data-look="classic" data-points="W3sieCI6NjA4LjA2Mjk4ODI4MTI1LCJ5Ijo2MzB9LHsieCI6NTU4LjI1MzkwNjI1LCJ5Ijo2Njd9LHsieCI6NTU4LjI1MzkwNjI1LCJ5Ijo3MDR9XQ=="/>
+      <path id="mermaid-svg-L_P_R_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M558 758v6c0 6 0 19 8 31s23 23 31 29l8 6" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_P_R_0" data-look="classic" data-points="W3sieCI6NTU4LjI1MzkwNjI1LCJ5Ijo3NTh9LHsieCI6NTU4LjI1MzkwNjI1LCJ5Ijo3OTV9LHsieCI6NjA4LjA2Mjk4ODI4MTI1LCJ5Ijo4MzJ9XQ=="/>
+      <path id="mermaid-svg-L_O_Q_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m707 630 15 6c14 6 43 19 57 30 14 12 14 23 14 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_O_Q_0" data-look="classic" data-points="W3sieCI6NzA3LjI3NDQ3NTA5NzY1NjIsInkiOjYzMH0seyJ4Ijo3OTMuNDIxODc1LCJ5Ijo2Njd9LHsieCI6NzkzLjQyMTg3NSwieSI6NzA0fV0="/>
+      <path id="mermaid-svg-L_Q_R_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M793 758v6c0 6 0 19-13 31-14 12-42 24-55 30l-14 5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_Q_R_0" data-look="classic" data-points="W3sieCI6NzkzLjQyMTg3NSwieSI6NzU4fSx7IngiOjc5My40MjE4NzUsInkiOjc5NX0seyJ4Ijo3MDcuMjc0NDc1MDk3NjU2MiwieSI6ODMyfV0="/>
+      <path id="mermaid-svg-L_R_S1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m603 886-7 4c-6 4-19 13-26 20q-7 12-6 19v3" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_R_S1_0" data-look="classic" data-points="W3sieCI6NjAyLjU1NzMxNjcwNjczMDcsInkiOjg4Nn0seyJ4Ijo1NjMuODA0Njg3NSwieSI6OTExfSx7IngiOjU2My44MDQ2ODc1LCJ5Ijo5MzZ9XQ=="/>
+      <path id="mermaid-svg-L_R_S2_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m719 886 12 4c12 4 35 13 46 20 12 8 12 15 12 19v3" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_R_S2_0" data-look="classic" data-points="W3sieCI6NzE5LjM5NjQwOTI1NDgwNzcsInkiOjg4Nn0seyJ4Ijo3ODguODI4MTI1LCJ5Ijo5MTF9LHsieCI6Nzg4LjgyODEyNSwieSI6OTM2fV0="/>
+      <path id="mermaid-svg-L_B_D_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m426 157-40 7c-40 8-120 24-160 42s-40 40-40 59v435" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_B_D_0" data-look="classic" data-points="W3sieCI6NDI2LjI4OTA2MjUsInkiOjE1Ni42ODE1Nzc3NzIwMzE3fSx7IngiOjE4NS43NTc4MTI1LCJ5IjoyMDN9LHsieCI6MTg1Ljc1NzgxMjUsInkiOjI2N30seyJ4IjoxODUuNzU3ODEyNSwieSI6MzE5fSx7IngiOjE4NS43NTc4MTI1LCJ5IjozNzF9LHsieCI6MTg1Ljc1NzgxMjUsInkiOjQzNX0seyJ4IjoxODUuNzU3ODEyNSwieSI6NDk5fSx7IngiOjE4NS43NTc4MTI1LCJ5Ijo1NTF9LHsieCI6MTg1Ljc1NzgxMjUsInkiOjYwM30seyJ4IjoxODUuNzU3ODEyNSwieSI6NjY3fSx7IngiOjE4NS43NTc4MTI1LCJ5Ijo3MDR9XQ=="/>
+      <path id="mermaid-svg-L_D_E1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m246 758 14 6c14 6 42 19 56 30 14 12 14 23 14 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_D_E1_0" data-look="classic" data-points="W3sieCI6MjQ2LjQ5NzkyNDgwNDY4NzUsInkiOjc1OH0seyJ4IjozMjkuNzM0Mzc1LCJ5Ijo3OTV9LHsieCI6MzI5LjczNDM3NSwieSI6ODMyfV0="/>
+      <path id="mermaid-svg-L_E1_I1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M330 886v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_E1_I1_0" data-look="classic" data-points="W3sieCI6MzI5LjczNDM3NSwieSI6ODg2fSx7IngiOjMyOS43MzQzNzUsInkiOjkxMX0seyJ4IjozMjkuNzM0Mzc1LCJ5Ijo5MzZ9XQ=="/>
+      <path id="mermaid-svg-L_D_F1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="m152 758-8 6c-8 6-23 19-31 30q-9 19-7 29v5" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_D_F1_0" data-look="classic" data-points="W3sieCI6MTUxLjkzODU5ODYzMjgxMjUsInkiOjc1OH0seyJ4IjoxMDUuNTkzNzUsInkiOjc5NX0seyJ4IjoxMDUuNTkzNzUsInkiOjgzMn1d"/>
+      <path id="mermaid-svg-L_F1_H1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M106 886v46" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_F1_H1_0" data-look="classic" data-points="W3sieCI6MTA1LjU5Mzc1LCJ5Ijo4ODZ9LHsieCI6MTA1LjU5Mzc1LCJ5Ijo5MTF9LHsieCI6MTA1LjU5Mzc1LCJ5Ijo5MzZ9XQ=="/>
+      <path id="mermaid-svg-L_H1_J1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M106 990v4c0 4 0 13 43 23 43 11 130 24 173 31l43 7" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_H1_J1_0" data-look="classic" data-points="W3sieCI6MTA1LjU5Mzc1LCJ5Ijo5OTB9LHsieCI6MTA1LjU5Mzc1LCJ5IjoxMDE1fSx7IngiOjM2OS4xODM1OTM3NSwieSI6MTA1NS4xNzQ4MDkwODE2NDU0fV0="/>
+      <path id="mermaid-svg-L_I1_J1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M330 990v4c0 4 0 13 9 21 8 8 26 16 35 19l8 4" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_I1_J1_0" data-look="classic" data-points="W3sieCI6MzI5LjczNDM3NSwieSI6OTkwfSx7IngiOjMyOS43MzQzNzUsInkiOjEwMTV9LHsieCI6Mzg2LjAwMTI3NzA0MzI2OTIsInkiOjEwNDB9XQ=="/>
+      <path id="mermaid-svg-L_S1_J1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M564 990v4c0 4 0 13-9 21s-26 16-35 19l-9 4" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_S1_J1_0" data-look="classic" data-points="W3sieCI6NTYzLjgwNDY4NzUsInkiOjk5MH0seyJ4Ijo1NjMuODA0Njg3NSwieSI6MTAxNX0seyJ4Ijo1MDcuNTM3Nzg1NDU2NzMwOCwieSI6MTA0MH1d"/>
+      <path id="mermaid-svg-L_S2_J1_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M789 990v4c0 4 0 13-44 23-43 11-130 24-173 31l-44 7" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_S2_J1_0" data-look="classic" data-points="W3sieCI6Nzg4LjgyODEyNSwieSI6OTkwfSx7IngiOjc4OC44MjgxMjUsInkiOjEwMTV9LHsieCI6NTI0LjM1NTQ2ODc1LCJ5IjoxMDU1LjIwNTMyODQ5MTMyNjZ9XQ=="/>
+      <path id="mermaid-svg-L_J1_K_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M447 1094v4c0 4 0 13 14 21s42 16 56 20l14 4" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_J1_K_0" data-look="classic" data-points="W3sieCI6NDQ2Ljc2OTUzMTI1LCJ5IjoxMDk0fSx7IngiOjQ0Ni43Njk1MzEyNSwieSI6MTExOX0seyJ4Ijo1MzQuOTQ3NDkwOTg1NTc2OSwieSI6MTE0NH1d"/>
+      <path id="mermaid-svg-L_M_K_0" marker-end="url(#mermaid-svg_flowchart-v2-pointEnd)" d="M916 1094v4c0 4 0 13-30 22-30 10-89 21-119 26l-30 6" class="edge-thickness-normal edge-pattern-solid edge-thickness-normal edge-pattern-solid flowchart-link" data-edge="true" data-et="edge" data-id="L_M_K_0" data-look="classic" data-points="W3sieCI6OTE1LjcxODc1LCJ5IjoxMDk0fSx7IngiOjkxNS43MTg3NSwieSI6MTExOX0seyJ4Ijo3MzMuMjU3ODEyNSwieSI6MTE1Mi4yMjgyNjg4OTkyODZ9XQ=="/>
+    </g>
+    <g class="edgeLabels">
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_A_B_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="20.5" height="24" class="label" data-id="L_B_C_0" transform="translate(737 191)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                No
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_C_L_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="44.5" height="24" class="label" data-id="L_L_M_0" transform="translate(893 719)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                Getter
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="42.7" height="24" class="label" data-id="L_L_N_0" transform="translate(623 423)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                Setter
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_N_O_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="26.1" height="24" class="label" data-id="L_O_P_0" transform="translate(545 655)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                Yes
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_P_R_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="20.5" height="24" class="label" data-id="L_O_Q_0" transform="translate(783 655)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                No
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_Q_R_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_R_S1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_R_S2_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="26.1" height="24" class="label" data-id="L_B_D_0" transform="translate(173 423)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                Yes
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="20.5" height="24" class="label" data-id="L_D_E1_0" transform="translate(320 783)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                No
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_E1_I1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="26.1" height="24" class="label" data-id="L_D_F1_0" transform="translate(93 783)">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel">
+              <p>
+                Yes
+              </p>
+            </span>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_F1_H1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_H1_J1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_I1_J1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_S1_J1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_S2_J1_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_J1_K_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+      <g class="edgeLabel">
+        <foreignObject width="0" height="0" class="label" data-id="L_M_K_0">
+          <div xmlns="http://www.w3.org/1999/xhtml" class="labelBkg" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+            <span class="edgeLabel"/>
+          </div>
+        </foreignObject>
+      </g>
+    </g>
+    <g class="nodes">
+      <g id="mermaid-svg-flowchart-A-0" class="node default" data-look="classic">
+        <path d="M443 8h149v54H443z" class="basic label-container"/>
+        <g class="label" transform="translate(474 23)">
+          <rect/>
+          <foreignObject width="88.9" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  $(value, tag)
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-B-1" class="node default" data-look="classic">
+        <path d="M426 112h184v54H426z" class="basic label-container"/>
+        <g class="label" transform="translate(456 127)">
+          <rect/>
+          <foreignObject width="123.6" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  value is function?
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-C-3" class="node default" data-look="classic">
+        <path d="M668 240h157v54H668z" class="basic label-container"/>
+        <g class="label" transform="translate(699 255)">
+          <rect/>
+          <foreignObject width="97" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Create Signal
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-L-5" class="node default" data-look="classic">
+        <path d="M667 344h160v54H667z" class="basic label-container"/>
+        <g class="label" transform="translate(697 359)">
+          <rect/>
+          <foreignObject width="99.6" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Signal Access
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-M-7" class="node default" data-look="classic">
+        <path d="M838 1040h156v54H838z" class="basic label-container"/>
+        <g class="label" transform="translate(868 1055)">
+          <rect/>
+          <foreignObject width="96" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Invoke Getter
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-N-9" class="node default" data-look="classic">
+        <path d="M537 472h214v54H537z" class="basic label-container"/>
+        <g class="label" transform="translate(568 487)">
+          <rect/>
+          <foreignObject width="153.6" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Update Internal Value
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-O-11" class="node default" data-look="classic">
+        <path d="M574 576h140v54H574z" class="basic label-container"/>
+        <g class="label" transform="translate(604 591)">
+          <rect/>
+          <foreignObject width="80" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Persistent?
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-P-13" class="node default" data-look="classic">
+        <path d="M463 704h189v54H463z" class="basic label-container"/>
+        <g class="label" transform="translate(494 719)">
+          <rect/>
+          <foreignObject width="129" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Sync localStorage
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-R-14" class="node default" data-look="classic">
+        <path d="M549 832h190v54H549z" class="basic label-container"/>
+        <g class="label" transform="translate(579 847)">
+          <rect/>
+          <foreignObject width="129.8" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Notify Subscribers
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-Q-16" class="node default" data-look="classic">
+        <path d="M747 704h91v54h-91z" class="basic label-container"/>
+        <g class="label" transform="translate(778 719)">
+          <rect/>
+          <foreignObject width="31.1" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Skip
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-S1-19" class="node default" data-look="classic">
+        <path d="M466 936h196v54H466z" class="basic label-container"/>
+        <g class="label" transform="translate(496 951)">
+          <rect/>
+          <foreignObject width="136.1" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Component Re-run
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-S2-21" class="node default" data-look="classic">
+        <path d="M712 936h154v54H712z" class="basic label-container"/>
+        <g class="label" transform="translate(742 951)">
+          <rect/>
+          <foreignObject width="94" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Effect Re-run
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-D-23" class="node default" data-look="classic">
+        <path d="M107 704h157v54H107z" class="basic label-container"/>
+        <g class="label" transform="translate(137 719)">
+          <rect/>
+          <foreignObject width="97" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  tag provided?
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-E1-25" class="node default" data-look="classic">
+        <path d="M253 832h153v54H253z" class="basic label-container"/>
+        <g class="label" transform="translate(283 847)">
+          <rect/>
+          <foreignObject width="93.1" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Create Effect
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-I1-26" class="node default" data-look="classic">
+        <path d="M244 936h172v54H244z" class="basic label-container"/>
+        <g class="label" transform="translate(274 951)">
+          <rect/>
+          <foreignObject width="112.1" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Initial Execution
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-F1-28" class="node default" data-look="classic">
+        <path d="M8 832h195v54H8z" class="basic label-container"/>
+        <g class="label" transform="translate(38 847)">
+          <rect/>
+          <foreignObject width="135.2" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Create Component
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-H1-29" class="node default" data-look="classic">
+        <path d="M29 936h154v54H29z" class="basic label-container"/>
+        <g class="label" transform="translate(58 951)">
+          <rect/>
+          <foreignObject width="94.3" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Initial Render
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-J1-31" class="node default" data-look="classic">
+        <path d="M369 1040h155v54H369z" class="basic label-container"/>
+        <g class="label" transform="translate(399 1055)">
+          <rect/>
+          <foreignObject width="95.2" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Read Signals
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+      <g id="mermaid-svg-flowchart-K-39" class="node default" data-look="classic">
+        <path d="M527 1144h206v54H527z" class="basic label-container"/>
+        <g class="label" transform="translate(557 1159)">
+          <rect/>
+          <foreignObject width="146.2" height="24">
+            <div xmlns="http://www.w3.org/1999/xhtml" display="table-cell" style="white-space:nowrap;line-height:1.5;max-width:200px;text-align:center">
+              <span class="nodeLabel">
+                <p>
+                  Track Dependencies
+                </p>
+              </span>
+            </div>
+          </foreignObject>
+        </g>
+      </g>
+    </g>
+  </g>
+  <defs>
+    <filter id="mermaid-svg-drop-shadow" width="130%" height="130%">
+      <feDropShadow dx="4" dy="4" flood-color="#fff" flood-opacity=".1" stdDeviation="0"/>
+    </filter>
+    <path id="reuse-1" d="m1 1 13 13M1 14 14 1"/>
+  </defs>
+  <defs>
+    <filter id="mermaid-svg-drop-shadow-small" width="150%" height="150%">
+      <feDropShadow dx="2" dy="2" flood-color="#fff" flood-opacity=".1" stdDeviation="0"/>
+    </filter>
+  </defs>
+  <linearGradient id="mermaid-svg-gradient" x1="0%" x2="100%" y1="0%" y2="0%" gradientUnits="objectBoundingBox">
+    <stop offset="0%" stop-color="#ccc"/>
+    <stop offset="100%" stop-color="hsl(180, 0%, 18.3529411765%)"/>
+  </linearGradient>
+</svg>
